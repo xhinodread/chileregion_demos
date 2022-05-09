@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Navvar from '../components/Navvar'
+import Navvar from '../components/navvar'
 
 import React, { useEffect } from 'react';
 
