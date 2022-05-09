@@ -2,7 +2,7 @@ import Head from 'next/head'
 //import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Navvar from './components/Navvar'
+import Navvar from './components/navvar'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

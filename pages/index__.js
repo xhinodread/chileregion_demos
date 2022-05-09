@@ -1,8 +1,8 @@
 import styles from '../styles/Home.module.css'
 import Head from 'next/head'
-import Navvar from './components/Navvar'
-import Body from './components/Body'
-import Foot from './components/Foot'
+import Navvar from './components/navvar'
+import Body from './components/body'
+import Foot from './components/foot'
 
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main>
         <Navvar />
-        <Body />        
+        <Body />
         <Foot />
       </main>
     </div>

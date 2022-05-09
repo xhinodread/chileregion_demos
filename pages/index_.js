@@ -2,7 +2,7 @@ import Head from 'next/head'
 //import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Navvar from './components/Navvar'
+import Navvar from './components/navvar'
 
  // import bootstrap from 'bootstrap'
 
@@ -77,7 +77,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-          
+
           </span>
         </a>
       </footer>
