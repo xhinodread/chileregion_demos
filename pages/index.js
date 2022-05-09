@@ -1,9 +1,9 @@
 import Head from 'next/head'
 //import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from './components/Navbar'
-import HomeBanner from './components/HomeBanner'
-import CardPortafolio from './components/CardPortafolio'
+import Navbar from './components/navbar'
+import HomeBanner from './components/homeBanner'
+import CardPortafolio from './components/cardPortafolio'
 import Container from 'react-bootstrap/Container';
 // import {Navbar, Nav, NavDropdown, Card} from 'react-bootstrap/'
 import Row from 'react-bootstrap/Row';
