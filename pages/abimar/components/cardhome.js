@@ -25,7 +25,7 @@ export default function Cardhome(props) {
             <div className="card-body">
               <h5 className="card-title">{valors.titulo}</h5>
               <p className="card-text text-justify">{valors.texto}</p>
-              <p className="card-text"><small className="text-muted">Actualizado hace 3 mins</small></p>
+              <p className="card-text"><small className="text-muted">Actualizado hace 3 mins...</small></p>
             </div>
           </div>
         )
