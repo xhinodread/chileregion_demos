@@ -1,5 +1,9 @@
 :root{
   --nx-fondo-cl: #efdede;
+  --s-text-p: #000000;
+  --s-dark: #c6a700;
+  --s-ligth: #ffff6b;
+  --p-text-p: #ffffff;
 }
 
 html,
@@ -120,6 +124,8 @@ a {
   .cuerpo{
     max-width: 95%;
   }
+
+
 }
 @media (max-width:420px) {
   .card-stilo h1{
@@ -172,3 +178,6 @@ a {
 
   }
 }
+
+
+/***** ABIMAR **************/
