@@ -9,6 +9,7 @@ import Pies from './components/pies'
 export default function Abimar(props) {
 
   // {url: "/images/abimar/sea-water-hd-800.png", titulo:"Manejo de areas de manejo"},
+  /// imagen carrusel ******
   const urlImg=[
     {url: "/images/abimar/sea-water-hd-800.png"},
     {url: "/images/abimar/a5.webp"},

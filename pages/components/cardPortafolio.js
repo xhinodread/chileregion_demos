@@ -32,7 +32,7 @@ export default function CardPortafolio(props){
               <small className="text-muted">{txt_extra}</small>
             </p>
           </div>
-          <img src={imagen} className="card-img-bottom" alt={titulo} />
+          <img src={imagen} className="card-img-bottom" alt={titulo}  />
         </div>
       </div>
     )

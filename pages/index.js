@@ -14,7 +14,7 @@ import styles from '../styles/Home.module.css'
  // import bootstrap from 'bootstrap'
 
 const json_demos=[
-  {id:1, titulo:"Abimar", texto:"La empresa abimar, posee un amplio registro de servicios requeridos por el sector pesquero artesanal, gubernamental y privado, vinculado al ámbito marino...", txt_extra:"Ultima actualización 3 mins ...", imagen:"./images/portadaPortafolios.jpg", url:"/abimar"},
+  {id:1, titulo:"Abimar", texto:"La empresa abimar, posee un amplio registro de servicios requeridos por el sector pesquero artesanal, gubernamental y privado, vinculado al ámbito marino...", txt_extra:"Ultima actualización 3 mins ...", imagen:"./images/portadaPortafoliosAbimar.jpg", url:"/abimar"},
   {id:2, titulo:"Demo 2", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
   {id:3, titulo:"Demo 3", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
   {id:4, titulo:"Demo 4", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
@@ -41,6 +41,11 @@ export default function Home() {
       </div>
 
     <div className="container-flex cuerpo">
+      <div className="row align-items-center tutilo-portafolio" >
+        <div className="col text-center">
+          <h2 className="" >Portafolio</h2>
+        </div>
+      </div>
       <div className="row align-items-center " >
         <div className="col">
           <div className="card border-light ">
@@ -111,6 +116,15 @@ export default function Home() {
         </div>
       </div>
     </div>
+
+    <style jsx>{`
+
+    .tutilo-portafolio{
+      margin-top: 50px !important;
+      text-shadow: 2px 2px 2px #915568;
+      //background-color: blue;
+    }
+    `}</style>
   </>
   )
 }
