@@ -10,45 +10,18 @@ export default function Index(){
         <title>~ Planeta Sol ~</title>
       </Head>
       <div className="container">
-        <nav className="navbar fixed-top bg-light">
+        <nav className="navbar fixed-top bg-home">
           <div className="container-fluid">
             <Image src="/images/planetasol/logo.jpg" width="50" height="50" />
             <a className="navbar-brand" href="#">Planeta Sol</a>
           </div>
         </nav>
       </div>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
-      <p>..</p>
+      <style jsx>{`
+        .bg-home{
+          background-color: #e3f2fd;
+        }
+      `}</style>
     </>
   )
 }
