@@ -1,7 +1,7 @@
 import CardPortafolio from './cardPortafolio'
 
 export default function Portafolio(props) {
-  const json_demos = props.json_demos
+  const json_demos = props.json_demos? props.json_demos: null;
   return(
     <>
       <div className="container-flex cuerpo">
