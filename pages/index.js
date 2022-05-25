@@ -1,21 +1,22 @@
-import Head from 'next/head'
+import Head from 'next/head';
 //import Image from 'next/image'
-import Link from 'next/link'
-import Navbar from './components/navbar'
-import HomeBanner from './components/homeBanner'
+import Link from 'next/link';
+import Navbar from './components/navbar';
+import HomeBanner from './components/homeBanner';
+import Portafolio from './components/portafolio';
 import CardPortafolio from './components/cardPortafolio'
 import Container from 'react-bootstrap/Container';
 // import {Navbar, Nav, NavDropdown, Card} from 'react-bootstrap/'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 
 
  // import bootstrap from 'bootstrap'
 
 const json_demos=[
   {id:1, titulo:"Abimar", texto:"La empresa abimar, posee un amplio registro de servicios requeridos por el sector pesquero artesanal, gubernamental y privado, vinculado al ámbito marino...", txt_extra:"Ultima actualización 3 mins ...", imagen:"./images/portadaPortafoliosAbimar.jpg", url:"/abimar"},
-  {id:2, titulo:"Demo 2", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
+  {id:2, titulo:"Planeta Sol", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"/planetasol"},
   {id:3, titulo:"Demo 3", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
   {id:4, titulo:"Demo 4", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
   {id:5, titulo:"Demo 5", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
@@ -40,40 +41,8 @@ export default function Home() {
         </div>
       </div>
 
-    <div className="container-flex cuerpo">
-      <div className="row align-items-center tutilo-portafolio" >
-        <div className="col text-center">
-          <h2 className="" >Portafolio</h2>
-        </div>
-      </div>
-      <div className="row align-items-center " >
-        <div className="col">
-          <div className="card border-light ">
-            <div className="card-body">
-              <div className="container-flex">
-                <div className="row m-2">
-                {
-                  json_demos.map(datos=>{
-                    return  <CardPortafolio key={datos.id} {...datos} />
-                  })
-                }
-                </div>
-                <div className="row m-2 ">
-                  <CardPortafolio {...json_demos[2]} />
-                  <CardPortafolio {...json_demos[5]} />
-                  <CardPortafolio {...json_demos[1]} />
-                </div>
-                <div className="row m-2">
-                  <CardPortafolio />
-                  <CardPortafolio />
-                  <CardPortafolio />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Portafolio json_demos={json_demos} />
+
 
     <div className="container pies">
       <div className="row justify-content-center text-center">
@@ -112,19 +81,12 @@ export default function Home() {
           © 2022<br/>
           Chileregión<br/>
           Coquimbo - Chile<br/>
-          Todos los derechos reservados
+          Todos los derechos reservados<br/>
         </div>
       </div>
     </div>
 
-    <style jsx>{`
-
-    .tutilo-portafolio{
-      margin-top: 50px !important;
-      text-shadow: 2px 2px 2px #915568;
-      //background-color: blue;
-    }
-    `}</style>
+    <style jsx>{` `}</style>
   </>
   )
 }

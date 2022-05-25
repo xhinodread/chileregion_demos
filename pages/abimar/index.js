@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Cabeza from './components/cabeza'
 import Carrusel from './components/carrusel'
 import Cardhome from './components/cardhome'
@@ -8,6 +9,7 @@ import Pies from './components/pies'
 
 export default function Abimar(props) {
 
+   const [visible, setVisible] = useState("btn-flotante");
   // {url: "/images/abimar/sea-water-hd-800.png", titulo:"Manejo de areas de manejo"},
   /// imagen carrusel ******
   const urlImg=[
@@ -27,9 +29,33 @@ export default function Abimar(props) {
     texto:"Abimar Ltda. es una empresa que empezó sus actividades en el año 2003 especializándose en el ámbito de las Ciencias del Mar en Áreas Marinas Protegidas (Reserva Marina Isla Chañaral, Reserva marina Pingüino de Humboldt, Áreas de Manejo Y Explotación de ´Recursos Bentónicos) con un total de 60 AMERBs aprox. Ademas de incluimos los estudios de Seguimientos y ESBAs (Estudio de Situación Base) en todo Chile."
   }
 
+  const getOffset=( el )=> {
+    var _x = 0;
+    var _y = 0;
+    while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
+        _x += el.offsetLeft - el.scrollLeft;
+        _y += el.offsetTop - el.scrollTop;
+        el = el.offsetParent;
+    }
+    return { top: _y, left: _x };
+  }
+
+  let elDiv=null;
+  if (typeof window !== "undefined") {
+    elDiv=document.getElementById('una-id')
+    window.addEventListener('scroll', function(e) {
+      window.requestAnimationFrame(function() {
+        // console.log('elDiv: ', elDiv.getBoundingClientRect().top  );
+        // console.log('scrollY: ', window.scrollY  );
+        (window.scrollY <= 250)? setVisible("invisible btn-flotante"): setVisible("btn-flotante")
+      })
+    })
+  }
+
   // <div className="carousel-caption " style={{"top":"-10px"}}>
   return(
     <>
+      <div id="una-id" />
       <Cabeza titulo="Abimar" />
       <div className="container">
         <Carrusel urlImg={urlImg} />
@@ -37,9 +63,60 @@ export default function Abimar(props) {
         <Cardhome {...[urlImgCards]} />
         <Paralaxhome />
         <Hoverhome />
+        <a id="bntVolver" href="#una-id" className={visible} >
+          <i className="bi bi-arrow-up-circle-fill h1"></i>
+        </a>
         <Pies />
       </div>
-      <style jsx>{` `}</style>
+      <style jsx>{`
+        .invisible{
+          // transition: all 500ms ease 0ms;
+          transform: translateY(7px);
+          opacity:0;
+          display:none;
+          // animation-name: ejemplo;
+          // animation-duration: 4s;
+        }
+        @keyframes ejemplo {
+          from {display:contents;}
+          to {display:none;}
+        }
+
+        .btn-flotante {
+          // display:contents;
+          transition: opacity 500ms linear;
+          opacity:1;
+          font-size: 16px; /* Cambiar el tamaño de la tipografia */
+          text-transform: uppercase; /* Texto en mayusculas */
+          font-weight: bold; /* Fuente en negrita o bold */
+          color: #ffffff; /* Color del texto */
+          border-radius: 9px; /* Borde del boton */
+          letter-spacing: 2px; /* Espacio entre letras */
+          background-color: #475ba3c2; /* Color de fondo */
+          padding: 10px 10px; /* Relleno del boton */
+          //margin:0 auto;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          transition: all 300ms ease 0ms;
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          z-index: 99;
+        }
+        .btn-flotante:hover {
+          background-color: #2c2fa5; /* Color de fondo al pasar el cursor */
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+          transform: translateY(-7px);
+        }
+        @media only screen and (max-width: 600px) {
+          .btn-flotante {
+          font-size: 14px;
+          padding: 10px 10px;
+          bottom: 20px;
+          right: 20px;
+          }
+        }
+
+        `}</style>
     </>
   )
 }
