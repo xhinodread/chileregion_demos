@@ -5,18 +5,25 @@ export default function Paralaxhome(){
 
   return(
     <>
-      <div className="parallax text-center text-white">
-          <p>Seguridad garantizada!</p>
+      <div className="container-fluid" >
+        <div className="parallax text-center text-white">
+            <p>Seguridad garantizada!</p>
+        </div>
       </div>
       <style jsx>{`
+        .container-fluid{
+          margin: 0 auto;
+        }
         .parallax {
-            width: 100%;
-            height: 250px;
-            background-image: url(./images/abimar/esba.jpg);
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            margin-bottom: 60px;
+          margin: 0 auto;
+
+          width: 90%;
+          height: 250px;
+          background-image: url(./images/planetasol/paralax.png);
+          background-position: center;
+          background-size: cover;
+          background-attachment: fixed;
+          margin-bottom: 60px;
         }
         .parallax p {
             height: 100%;

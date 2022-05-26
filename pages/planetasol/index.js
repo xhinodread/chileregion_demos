@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Menu from './components/menu'
 import Carrusel from './components/carrusel'
-import Categorias from './components/Categorias'
+import Categorias from './components/categorias'
 import Carteles from './components/carteles'
+import Paralaxhome from './components/paralaxhome'
 
 export default function Index(){
 
@@ -35,6 +36,12 @@ export default function Index(){
         <div className="row mt-3">
           <div className="col">
             <Carteles />
+          </div>
+        </div>
+
+        <div className="row mt-3">
+          <div className="col">
+            <Paralaxhome />
           </div>
         </div>
 
