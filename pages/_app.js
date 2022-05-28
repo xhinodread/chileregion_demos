@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
        <link rel="preconnect" href="https://fonts.googleapis.com" />
        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Bebas+Neue&family=Roboto:wght@300&family=Satisfy&display=swap" rel="stylesheet" />
-
+       <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet" />
      </Head>
     {  // <Script
       //   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

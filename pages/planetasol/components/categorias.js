@@ -3,6 +3,8 @@ export default function Categorias(){
 
   return(
     <>
+    <div className="container" >
+
       <h4 className="text-center" >CATEGORIAS</h4>
       <div className="row">
         <div className="col">
@@ -39,6 +41,7 @@ export default function Categorias(){
         </div>
       </div>
 
+    </div>
     </>
   )
 }
