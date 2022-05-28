@@ -32,11 +32,11 @@ export default function Pies(){
           </div>
         </div>
         <div className="row align-item-center mt-2 ">
-          <div className="col">
-            <p className="text-center bg-dark text-light p-3">
+          <div className="col p-3 text-center bg-dark text-light">
+            <p className=" p-3">
               Taller Optico Optica Coquimbo<br/> OPTICA PLANETA SOL
-              <p>© 2022</p>
             </p>
+            <h4>© 2022</h4>
           </div>
         </div>
       </div>
