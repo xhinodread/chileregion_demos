@@ -9,7 +9,7 @@ export default function Categorias(){
       <div className="row">
         <div className="col">
           <div className="card m-2">
-            <img src="/images/planetasol/sunglass.webp" className="card-img-top" alt="..." />
+            <img src="/images/planetasol/sunGlass.webp" className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title text-center">LENTES DE SOL</h5>
             </div>
@@ -25,7 +25,7 @@ export default function Categorias(){
         </div>
         <div className="col">
           <div className="card m-2">
-            <img src="/images/planetasol/biolente.webp" className="card-img-top" alt="..." />
+            <img src="/images/planetasol/bioLente.webp" className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title text-center">BIOLINEA</h5>
             </div>
