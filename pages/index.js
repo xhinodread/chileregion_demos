@@ -11,6 +11,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from '../styles/Home.module.css';
 
+import Imghover from './components/imghover'
+
 
  // import bootstrap from 'bootstrap'
 
@@ -43,6 +45,9 @@ export default function Home() {
 
     <Portafolio json_demos={json_demos} />
 
+    <div className="container">
+      <Imghover />
+    </div>
 
     <div className="container pies">
       <div className="row justify-content-center text-center">

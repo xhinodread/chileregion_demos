@@ -31,7 +31,7 @@ export default function Hoverhome(){
             /** grid-template-columns: 1fr 1fr 1fr; **/
             grid-template-columns: repeat(
                 auto-fill,
-                minmax(16rem, 1fr)
+                minmax(21rem, 1fr)
             ); /*con el metodo repeat definimos el fragmento, con el metodo auto fill auto rellenamos, y con el metodo minmax definimos el ancho min y max de nuestra card*/
             gap: 15px;
             text-align: center;

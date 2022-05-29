@@ -9,7 +9,7 @@ import Pies from './components/pies'
 
 export default function Abimar(props) {
 
-   const [visible, setVisible] = useState("btn-flotante");
+   const [visible, setVisible] = useState("invisible btn-flotante");
   // {url: "/images/abimar/sea-water-hd-800.png", titulo:"Manejo de areas de manejo"},
   /// imagen carrusel ******
   const urlImg=[
@@ -70,21 +70,12 @@ export default function Abimar(props) {
       </div>
       <style jsx>{`
         .invisible{
-          // transition: all 500ms ease 0ms;
+          transition: opacity 500ms, transform 500ms;
           transform: translateY(7px);
           opacity:0;
-          display:none;
-          // animation-name: ejemplo;
-          // animation-duration: 4s;
-        }
-        @keyframes ejemplo {
-          from {display:contents;}
-          to {display:none;}
         }
 
         .btn-flotante {
-          // display:contents;
-          transition: opacity 500ms linear;
           opacity:1;
           font-size: 16px; /* Cambiar el tamaño de la tipografia */
           text-transform: uppercase; /* Texto en mayusculas */
@@ -98,7 +89,8 @@ export default function Abimar(props) {
           position: fixed;
           bottom: 20px;
           right: 20px;
-          transition: all 300ms ease 0ms;
+          //transition: all 300ms ease 0ms;
+          transition: transform 300ms, opacity 500ms;
           box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
           z-index: 99;
         }
@@ -106,6 +98,8 @@ export default function Abimar(props) {
           background-color: #2c2fa5; /* Color de fondo al pasar el cursor */
           box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
           transform: translateY(-7px);
+          //transition: translateY 300ms;
+          //transition: opacity 500ms, transform 500ms;
         }
         @media only screen and (max-width: 600px) {
           .btn-flotante {
