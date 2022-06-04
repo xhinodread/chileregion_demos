@@ -1,7 +1,6 @@
 import Link from 'next/link'
 // import styles from '../stylos.css'
 
-
 export default function Menu(props) {
 
   const pathHome = '/abimar';

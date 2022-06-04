@@ -6,10 +6,25 @@ import { useEffect } from "react";
 import Script from "next/script"
 
 function MyApp({ Component, pageProps }) {
+
+  //const apiKey = "d7781e02414fbb04";
+
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
+    // renderMap()
   }, []);
 
+  // const renderMap = () => {
+  //   loadScript("https://maps.googleapis.com/maps/api/js?key={apiKey}&callback=initMap");
+  // }
+  // var map;
+  // const initMap = () => {
+  //   let {lat, lng} = this.state;
+  //   map = new window.google.maps.Map(document.getElementById('map'), {
+  //     center: {lat, lng},
+  //     zoom: 8
+  //   });
+  // }
 
   // return <Component {...pageProps} />
   return (

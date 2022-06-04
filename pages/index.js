@@ -12,14 +12,16 @@ import Col from 'react-bootstrap/Col';
 import styles from '../styles/Home.module.css';
 
 import Imghover from './components/imghover'
-
+import Googlemapa from './components/googlemapa'
+import Pies from './components/pies'
+import BottonGlowing from './components/bottonglowing'
 
  // import bootstrap from 'bootstrap'
 
 const json_demos=[
   {id:1, titulo:"Abimar", texto:"La empresa abimar, posee un amplio registro de servicios requeridos por el sector pesquero artesanal, gubernamental y privado, vinculado al ámbito marino...", txt_extra:"Ultima actualización 3 mins ...", imagen:"./images/portadaPortafoliosAbimar.jpg", url:"/abimar"},
   {id:2, titulo:"Planeta Sol", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"/planetasol"},
-  {id:3, titulo:"Demo 3", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
+  {id:3, titulo:"App Coorperativa", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"/appcoorperativa"},
   {id:4, titulo:"Demo 4", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
   {id:5, titulo:"Demo 5", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
   {id:6, titulo:"Demo 6", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"}
@@ -33,62 +35,40 @@ export default function Home() {
   return (
   <>
     <Head>
-      <title>~ Chileregión ~</title>
+      <title>~ Chile Región ~</title>
     </Head>
-      <div className="bg-inicio">
-        <Navbar />
+    <div className="bg-inicio">
+      <Navbar />
 
-        <div className="card-stilo" >
-          <HomeBanner />
-        </div>
+      <div className="card-stilo" >
+        <HomeBanner />
       </div>
+    </div>
 
     <Portafolio json_demos={json_demos} />
 
     <div className="container">
-      <Imghover />
+      <div className="row">
+        <div className="col">
+          <Imghover />
+        </div>
+        <div className="col">
+          <Googlemapa />
+        </div>
+      </div>
+
+      <div className="row align-item-center d-none d-lg-block ">
+        <div className="col p-3 m-5 bg-dark">
+          <BottonGlowing texto="boton 1" colorHover="blue" link="/abimar" />
+          <BottonGlowing texto="boton 2" colorHover="yellow" />
+          <BottonGlowing texto="boton 3" colorHover="#e3ac07" />
+          <BottonGlowing texto="boton 4" colorHover="#e5f93c" />
+        </div>
+      </div>
     </div>
 
-    <div className="container pies">
-      <div className="row justify-content-center text-center">
-        <div className="col-md-2 ms-md-auto ">
-          <h6>Mi Pime</h6>
-          <p className="bg-info p-3">
-            <img src="https://authenticjobs.com/wp-content/themes/authenticjobs/assets/img/logos/aj-logo-light.svg" alt="Authentic Jobs" width="107"  />
-          </p>
-        </div>
-        <div className="col-md-3 ms-md-auto text-center">
-          <h6>Redes</h6>
-          <p>
-            <i className="bi bi-whatsapp"></i> +56 9 999999999
-          </p>
-          <p>
-            <i className="bi bi-facebook"></i> Diseños 2022
-          </p>
-          <p>
-            <i className="bi bi-twitter"></i> #Diseños_2022
-          </p>
-        </div>
-        <div className="col-md-3 ms-md-auto text-center">
-          <h6>Infos</h6>
-          <p><i className="bi bi-patch-question"></i> Preguntas frecuentes</p>
-          <p><i className="bi bi-chat"></i> Asistencia Online</p>
-          <p><i className="bi bi-blockquote-left"></i> Blog</p>
-        </div>
-        <div className="col-md-3 ms-md-auto text-center">
-          <h6>Contactos</h6>
-          <p><i className="bi bi-envelope"></i> email@email.com</p>
-          <p><i className="bi bi-telephone-forward"></i> +56 9 02020202</p>
-        </div>
-      </div>
-      <div className="row justify-content-center text-center mt-5">
-        <div className="col-md-12">
-          © 2022<br/>
-          Chileregión<br/>
-          Coquimbo - Chile<br/>
-          Todos los derechos reservados<br/>
-        </div>
-      </div>
+    <div className="container mt-5 pies">
+      <Pies />
     </div>
 
     <style jsx>{` `}</style>
