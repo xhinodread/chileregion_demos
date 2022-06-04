@@ -11,7 +11,7 @@ export default function AppCoorperativa() {
             <Menu clasesCss="bg-dark navbar-dark" />
           </div>
         </div>
-        <div className="row mt-5">
+        <div className="row mt-5 mb-5">
           <div className="col mt-5">
             <Dashboard />
           </div>
