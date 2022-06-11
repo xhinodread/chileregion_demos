@@ -15,6 +15,8 @@ import Imghover from './components/imghover'
 import Googlemapa from './components/googlemapa'
 import Pies from './components/pies'
 import BottonGlowing from './components/bottonglowing'
+import Paginacion from './components/paginacion'
+import ServerSide from './api/server-side'
 
  // import bootstrap from 'bootstrap'
 
@@ -63,6 +65,15 @@ export default function Home() {
           <BottonGlowing texto="boton 2" colorHover="yellow" />
           <BottonGlowing texto="boton 3" colorHover="#e3ac07" />
           <BottonGlowing texto="boton 4" colorHover="#e5f93c" />
+        </div>
+      </div>
+    </div>
+
+    <div className="container mt-5 ">
+      <div className="row align-item-center ">
+        <div className="col p-3 m-5 bg-warning ">
+          <Paginacion />
+          {/*** <ServerSide /> ***/}
         </div>
       </div>
     </div>
