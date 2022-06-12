@@ -10,10 +10,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from '../styles/Home.module.css';
+import Pies from './components/pies'
 
 import Imghover from './components/imghover'
 import Googlemapa from './components/googlemapa'
-import Pies from './components/pies'
 import BottonGlowing from './components/bottonglowing'
 import Paginacion from './components/paginacion'
 import ServerSide from './api/server-side'
@@ -24,7 +24,7 @@ const json_demos=[
   {id:1, titulo:"Abimar", texto:"La empresa abimar, posee un amplio registro de servicios requeridos por el sector pesquero artesanal, gubernamental y privado, vinculado al ámbito marino...", txt_extra:"Ultima actualización 3 mins ...", imagen:"./images/portadaPortafoliosAbimar.jpg", url:"/abimar"},
   {id:2, titulo:"Planeta Sol", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"/planetasol"},
   {id:3, titulo:"App Coorperativa", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"/appcoorperativa"},
-  {id:4, titulo:"Demo 4", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
+  {id:4, titulo:"Efectos varios", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"/varios"},
   {id:5, titulo:"Demo 5", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"},
   {id:6, titulo:"Demo 6", texto:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", txt_extra:"Last updated 3 mins ago", imagen:"./images/portadaPortafolios.jpg", url:"#"}
 ];
@@ -48,35 +48,6 @@ export default function Home() {
     </div>
 
     <Portafolio json_demos={json_demos} />
-
-    <div className="container">
-      <div className="row">
-        <div className="col">
-          <Imghover />
-        </div>
-        <div className="col">
-          <Googlemapa />
-        </div>
-      </div>
-
-      <div className="row align-item-center d-none d-lg-block ">
-        <div className="col p-3 m-5 bg-dark">
-          <BottonGlowing texto="boton 1" colorHover="blue" link="/abimar" />
-          <BottonGlowing texto="boton 2" colorHover="yellow" />
-          <BottonGlowing texto="boton 3" colorHover="#e3ac07" />
-          <BottonGlowing texto="boton 4" colorHover="#e5f93c" />
-        </div>
-      </div>
-    </div>
-
-    <div className="container mt-5 ">
-      <div className="row align-item-center ">
-        <div className="col p-3 m-5 bg-warning ">
-          <Paginacion />
-          {/*** <ServerSide /> ***/}
-        </div>
-      </div>
-    </div>
 
     <div className="container mt-5 pies">
       <Pies />
