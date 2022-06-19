@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Router from "next/router";
 
-export default () => (
+const Slidercss=() => (
 <>
   <div className="slider justify-content-center mx-auto">
     <Link href="#slide-1" scroll={false}>
@@ -160,3 +160,4 @@ export default () => (
   `}</style>
 </>
 );
+export default Slidercss;
