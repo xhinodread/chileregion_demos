@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Imghover from '../components/imghover'
 import Googlemapa from '../components/googlemapa'
 import BottonGlowing from '../components/bottonglowing'
-import Paginacion from '../components/paginacion'
+// import Paginacion from '../components/paginacion'
 import ServerSide from '../api/server-side'
 
 export default function Varios() {
@@ -43,8 +43,8 @@ export default function Varios() {
       <div className="container mt-5 ">
         <div className="row align-item-center ">
           <div className="col p-3 m-5 bg-warning ">
-            <Paginacion />
-            {/*** <ServerSide /> ***/}
+          {/***  <Paginacion />
+             <ServerSide /> ***/}
           </div>
         </div>
       </div>
