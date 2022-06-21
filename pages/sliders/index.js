@@ -1,5 +1,6 @@
 import Purocss from './components/purocss'
 import Slidercss from './components/slidercss'
+import Link from 'next/link'
 
 export default function Sliders(){
 
@@ -9,6 +10,9 @@ export default function Sliders(){
       <div className="row">
         <div className="col slidercss m-3 p-4">
           Mis sliders
+          <Link href="/">
+            <a className="m-1 btn btn-info">Volver</a>
+          </Link>
         </div>
       </div>
       <div className="row">
