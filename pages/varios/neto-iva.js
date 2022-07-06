@@ -62,7 +62,7 @@ export default function Netoiva() {
                   </div>
                   <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label">Iva ({iva*100}%)</label>
-                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelpm"  defaultValue={totalIva} />
+                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelpm"  defaultValue={totalIva} value={totalIva} />
                     <div id="emailHelp2" className="form-text">El Impuesto al Valor Agregado (IVA) rige en casi todos los países del mundo, y en Chile representa un recargo del {iva*100}% sobre un bien o servicio entregado. Es decir, el vendedor incorpora el IVA a la transacción comercial y, por lo tanto, el precio del bien o servicio aumenta debido a dicho impuesto.</div>
                   </div>
                   <div className="mb-3">
