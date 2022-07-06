@@ -57,7 +57,7 @@ export default function Netoiva() {
                 <form onSubmit={sinSubmit} >
                   <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label">Valor neto</label>
-                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" defaultValue={neto} onChange={getNeto} />
+                    <input type="number" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" defaultValue={neto} onChange={getNeto} />
                     <div id="emailHelp" className="form-text">Término utilizado para referirse al valor que adquiere una variable al descontarle una cantidad determinada. Como por ejemplo, el ingreso neto, las ganancias netas, valor neto depreciable, etc. El Valor Neto también se relaciona con la base imponible sobre la cual se aplica el Impuesto al Valor Agregado (IVA).</div>
                   </div>
                   <div className="mb-3">
