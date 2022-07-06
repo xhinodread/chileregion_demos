@@ -32,7 +32,7 @@ export default function Varios() {
 
         <div className="row align-item-center d-none d-lg-block ">
           <div className="col p-3 m-5 bg-dark">
-            <BottonGlowing texto="boton 1" colorHover="blue" link="/abimar" />
+            <BottonGlowing texto="Calculo Iva" colorHover="blue" link="varios/neto-iva" />
             <BottonGlowing texto="boton 2" colorHover="yellow" />
             <BottonGlowing texto="boton 3" colorHover="#e3ac07" />
             <BottonGlowing texto="boton 4" colorHover="#e5f93c" />
