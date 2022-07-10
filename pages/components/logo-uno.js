@@ -16,6 +16,7 @@ export default function LogoUno(){
             <div className="mt-2 estrella6 ">
               <div className="texto_logo text-center" >CR</div>
               <div className="texto_logo texto_cmpleto_logo text-center" >CHILE REGION</div>
+              <div className="curved-corner-bottomleft" />
             </div>
           </div>
           <div className="col mt-5">
@@ -81,6 +82,56 @@ export default function LogoUno(){
           left: -85px;
           font-size: 12px;
         }
+        .icono_logo{
+          position: relative;
+          width: 10px;
+          height: 10px;
+          background: black;
+        }
+
+.curved-corner-bottomleft,
+.curved-corner-bottomright,
+.curved-corner-topleft,
+.curved-corner-topright {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  top: -16px;
+  left: -20px;
+  transform: rotate(-45deg);
+}
+.curved-corner-bottomleft:before,
+.curved-corner-bottomright:before,
+.curved-corner-topleft:before,
+.curved-corner-topright:before {
+  content: "";
+  display: block;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  border-radius: 50%;
+}
+.curved-corner-bottomleft:before {
+  bottom: 0;
+  left: 0;
+  box-shadow: -50px 50px 0 0 black;
+}
+.curved-corner-bottomright:before {
+  bottom: 0;
+  right: 0;
+  box-shadow: 50px 50px 0 0 black;
+}
+.curved-corner-topleft:before {
+  top: 0;
+  left: 0;
+  box-shadow: -50px -50px 0 0 black;
+}
+.curved-corner-topright:before {
+  top: 0;
+  right: 0;
+  box-shadow: 50px -50px 0 0 black;
+}
       `}</style>
     </>
   )
