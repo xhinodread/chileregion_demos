@@ -34,13 +34,16 @@ function MyApp({ Component, pageProps }) {
 
        <link rel="preconnect" href="https://fonts.googleapis.com" />
        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-       <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Bebas+Neue&family=Roboto:wght@300&family=Satisfy&display=swap" rel="stylesheet" />
-       <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet" />
+       <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Lemon&family=Merienda+One&family=New+Rocker&family=Peralta&family=Press+Start+2P&family=Sanchez&family=Sansita:ital,wght@0,400;0,700;1,900&family=Sedgwick+Ave+Display&family=Special+Elite&family=Train+One&family=Zen+Antique&display=swap" rel="stylesheet" />
      </Head>
     {  // <Script
       //   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       //   integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       //   crossorigin="anonymous"/>
+
+      // <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Bebas+Neue&family=Roboto:wght@300&family=Satisfy&display=swap" rel="stylesheet" />
+      // <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet" />
+      // <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Press+Start+2P&family=Sanchez&family=Sansita:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet" />
     }
       <Component {...pageProps} />
 

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Imghover from '../components/imghover'
 import Googlemapa from '../components/googlemapa'
 import BottonGlowing from '../components/bottonglowing'
+import LogoUno from '../components/logo-uno';
 // import Paginacion from '../components/paginacion'
 import ServerSide from '../api/server-side'
 
@@ -21,6 +22,12 @@ export default function Varios() {
           </div>
         </div>
 
+        <div className="row m-5 ">
+          <div className="col m-5">
+            <LogoUno />
+          </div>
+        </div>
+
         <div className="row">
           <div className="col">
             <Imghover />
@@ -33,7 +40,7 @@ export default function Varios() {
       {  /*** <div className="row align-item-center d-none d-lg-block "> ***/}
         <div className="row align-item-center d-lg-block ">
           <div className="col p-3 m-5 bg-dark">
-            <BottonGlowing texto="Calculo Iva" colorHover="blue" link="varios/neto-iva" />
+            <BottonGlowing texto="Calculo Iva" colorHover="blue" link="/varios/neto-iva" />
             <BottonGlowing texto="boton 2" colorHover="yellow" />
             <BottonGlowing texto="boton 3" colorHover="#e3ac07" />
             <BottonGlowing texto="boton 4" colorHover="#e5f93c" />

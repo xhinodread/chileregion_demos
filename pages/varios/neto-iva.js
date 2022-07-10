@@ -16,7 +16,7 @@ export default function Netoiva() {
       <div className="container mt-5">
         <div className="position-relative">
           <div className="position-absolute top-0 start-50 translate-middle">
-            <Link href="./">
+            <Link href="/">
               <a className="btn btn-info" >
                 Volver
               </a>
